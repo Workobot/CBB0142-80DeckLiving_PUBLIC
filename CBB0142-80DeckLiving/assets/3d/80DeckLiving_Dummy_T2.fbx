@@ -9,10 +9,10 @@ FBXHeaderExtension:  {
 		Year: 2026
 		Month: 5
 		Day: 25
-		Hour: 16
-		Minute: 18
-		Second: 55
-		Millisecond: 432
+		Hour: 17
+		Minute: 43
+		Second: 8
+		Millisecond: 264
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.3.4"
 	OtherFlags:  {
@@ -76,7 +76,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 2765191265440, "Scene", "Scene" {
+	Document: 3067865426160, "Scene", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -96,12 +96,12 @@ References:  {
 
 Definitions:  {
 	Version: 100
-	Count: 7
+	Count: 6
 	ObjectType: "GlobalSettings" {
 		Count: 1
 	}
 	ObjectType: "Model" {
-		Count: 4
+		Count: 3
 		PropertyTemplate: "FbxNode" {
 			Properties70:  {
 				P: "QuaternionInterpolate", "enum", "", "",0
@@ -221,7 +221,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 2789836728944, "Geometry::Scene", "Mesh" {
+	Geometry: 3066217877120, "Geometry::Scene", "Mesh" {
 		Vertices: *24 {
 			a: -50,-50,50,50,-50,50,-50,50,50,50,50,50,-50,50,-50,50,50,-50,-50,-50,-50,50,-50,-50
 		} 
@@ -330,7 +330,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 2777180470192, "Model::_80DeckLiving_Dummy_T2", "Null" {
+	Model: 3061880737344, "Model::_80DeckLiving_Dummy_T2", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationOrder", "enum", "", "",4
@@ -341,7 +341,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 2777180478192, "Model::Torre_2", "Mesh" {
+	Model: 3065683783792, "Model::Torre_2", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationOrder", "enum", "", "",4
@@ -355,7 +355,7 @@ Objects:  {
 		Shading: W
 		Culling: "CullingOff"
 	}
-	Model: 2777180466192, "Model::Comunal", "Mesh" {
+	Model: 3065683789792, "Model::Comunal", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationOrder", "enum", "", "",4
@@ -369,22 +369,7 @@ Objects:  {
 		Shading: W
 		Culling: "CullingOff"
 	}
-	Model: 2777180486192, "Model::Torre_3__1_", "Mesh" {
-		Version: 232
-		Properties70:  {
-			P: "RotationOrder", "enum", "", "",4
-			P: "RotationActive", "bool", "", "",1
-			P: "InheritType", "enum", "", "",1
-			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Lcl Translation", "Lcl Translation", "", "A",1011.05003356934,1789.99996185303,-3540.00015258789
-			P: "Lcl Rotation", "Lcl Rotation", "", "A",-0,90,0
-			P: "Lcl Scaling", "Lcl Scaling", "", "A",13.5412139892578,49.1144104003906,47.8672714233398
-		}
-		Shading: W
-		Culling: "CullingOff"
-	}
-	Material: 2789432771328, "Material::DefaultHDMaterial", "" {
+	Material: 3048432697248, "Material::DefaultHDMaterial", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -406,34 +391,25 @@ Objects:  {
 Connections:  {
 	
 	;Model::_80DeckLiving_Dummy_T2, Model::RootNode
-	C: "OO",2777180470192,0
+	C: "OO",3061880737344,0
 	
 	;Model::Torre_2, Model::_80DeckLiving_Dummy_T2
-	C: "OO",2777180478192,2777180470192
+	C: "OO",3065683783792,3061880737344
 	
 	;Model::Comunal, Model::_80DeckLiving_Dummy_T2
-	C: "OO",2777180466192,2777180470192
-	
-	;Model::Torre_3__1_, Model::_80DeckLiving_Dummy_T2
-	C: "OO",2777180486192,2777180470192
+	C: "OO",3065683789792,3061880737344
 	
 	;Material::DefaultHDMaterial, Model::Torre_2
-	C: "OO",2789432771328,2777180478192
+	C: "OO",3048432697248,3065683783792
 	
 	;Geometry::Scene, Model::Torre_2
-	C: "OO",2789836728944,2777180478192
+	C: "OO",3066217877120,3065683783792
 	
 	;Material::DefaultHDMaterial, Model::Comunal
-	C: "OO",2789432771328,2777180466192
+	C: "OO",3048432697248,3065683789792
 	
 	;Geometry::Scene, Model::Comunal
-	C: "OO",2789836728944,2777180466192
-	
-	;Material::DefaultHDMaterial, Model::Torre_3__1_
-	C: "OO",2789432771328,2777180486192
-	
-	;Geometry::Scene, Model::Torre_3__1_
-	C: "OO",2789836728944,2777180486192
+	C: "OO",3066217877120,3065683789792
 }
 ;Takes section
 ;----------------------------------------------------
